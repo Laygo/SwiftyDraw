@@ -102,7 +102,6 @@ open class SwiftyDrawView: UIView {
         }
     }
     /// Determines which touch types are allowed to draw; default: `[.finger, .pencil]` (all)
-    @available(iOS 9.1, *)
     public lazy var allowedTouchTypes: [TouchType] = [.finger, .pencil]
     
     public  var drawItems: [DrawItem] = []
@@ -113,7 +112,6 @@ open class SwiftyDrawView: UIView {
     private var previousPreviousPoint: CGPoint = .zero
     
     // For pencil interactions
-    @available(iOS 12.1, *)
     lazy private var pencilInteraction = UIPencilInteraction()
     
     /// Save the previous brush for Apple Pencil interaction Switch to previous tool
